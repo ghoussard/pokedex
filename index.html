@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="topbar-buttons">
+            <div class="topbar-button blue"></div>
+            <div class="topbar-button red"></div>
+            <div class="topbar-button yellow"></div>
+            <div class="topbar-button green"></div>
+        </div>
+        <div class="topbar-title">Pokedex</div>
+    </header>
+    <main class="container">
+        <div class="screen-container">
+            <div class="screen-container-top">
+                <div class="screen-container-top-button"></div>
+                <div class="screen-container-top-button"></div>
+            </div>
+            <div class="screen-container-screen">
+                <pokemon-view class="pokemon"/>
+            </div>
+            <div class="screen-container-bottom">
+                <div class="screen-container-bottom-button"></div>
+                <div class="screen-container-bottom-speaker">
+                    <div class="screen-container-bottom-speaker-line"></div>
+                    <div class="screen-container-bottom-speaker-line"></div>
+                    <div class="screen-container-bottom-speaker-line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="controls-left">
+                <div class="controls-left-button"></div>
+            </div>
+            <div class="controls-center">
+                <div class="controls-center-buttons">
+                    <div class="controls-center-button red"></div>
+                    <div class="controls-center-button blue"></div>
+                </div>
+                <div class="controls-center-screen">
+                </div>
+            </div>
+            <div class="controls-right">
+                <div class="controls-right-arrows">
+                    <div class="controls-right-arrow up"></div>
+                    <div class="controls-right-arrow right"></div>
+                    <div class="controls-right-arrow down"></div>
+                    <div class="controls-right-arrow left"></div>
+                    <div class="controls-right-arrow center"></div>
+                </div>
+            </div>
+        </div>    
+    </main>
+    <footer class="footer">
+        Data are fetched from <a href="https://pokeapi.co/" target="blank">PokeAPI</a>.
+    </footer>
+    <script src="app.js" type="application/javascript"></script>
+</body>
+</html>
